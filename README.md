@@ -22,6 +22,6 @@ the galaxy density fluctuations,
 
 the redshift-space distortions, and
 
-<img src="https://render.githubusercontent.com/render/math?math=W_{g,mag} ^{A,i}(k_\ell,\chi)=\frac{3 \Omega_m{H_o}^2}{c^2} \left[1 %2B z(\chi)\right]\chi \Bigg\{N_A^i(\chi)\Bigg\} \left[Q(\chi)-1\right]D(k_\ell,\chi)">
+<img src="https://render.githubusercontent.com/render/math?math=W_{g,mag} ^{A,i}(k_\ell,\chi)=\frac{3 \Omega_m{H_o}^2}{c^2} \left[1 %2B z(\chi)\right]\chi \widetilde{N_A^i(\chi)} \left[Q(\chi)-1\right]D(k_\ell,\chi)">
 
 the weak lensing magnification.
