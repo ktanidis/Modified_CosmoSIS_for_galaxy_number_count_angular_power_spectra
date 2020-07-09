@@ -18,10 +18,10 @@ with <img src="https://render.githubusercontent.com/render/math?math=\chi"> the 
 
 the galaxy density fluctuations,
 
-<img src="https://render.githubusercontent.com/render/math?math= W_{g,RSD} ^{A,i}(k_\ell,\chi)=\frac{2\ell^2 %2B 2\ell-1}{(2\ell-1)(2\ell%2B 3)}\left[N_A^i(\chi)\right]\Big\{\left[fD\right](k_\ell,\chi)\Big\}-">
+<img src="https://render.githubusercontent.com/render/math?math= W_{g,RSD} ^{A,i}(k_\ell,\chi)=\frac{2\ell^2 %2B 2\ell-1}{(2\ell-1)(2\ell%2B 3)}\left[N_A^i(\chi)\right]">
 
 the redshift-space distortions, and
 
-<img src="https://render.githubusercontent.com/render/math?math=W_{g,mag} ^{A,i}(k_\ell,\chi)=\frac{3 \Omega_m{H_o}^2}{c^2} \left[1 %2B z(\chi)\right]\chi \tilde N_A^i(\chi) \left[Q(\chi)-1\right]D(k_\ell,\chi)">
+<img src="https://render.githubusercontent.com/render/math?math=W_{g,mag} ^{A,i}(k_\ell,\chi)=\frac{3 \Omega_m{H_o}^2}{c^2} \left[1 %2B z(\chi)\right]\chi \widetilde N_A^i(\chi) \left[Q(\chi)-1\right]D(k_\ell,\chi)">
 
 the weak lensing magnification.
