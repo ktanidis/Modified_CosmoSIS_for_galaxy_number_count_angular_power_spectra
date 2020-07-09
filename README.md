@@ -36,7 +36,7 @@ Note again that maybe you'll need to add: `$ --user`
 After downloding the code, go to the main directory like this:
 
 ```shell
-$ cd cosmosis`
+$ cd cosmosis
 $ gedit setup-my-cosmosis
 ```
 
