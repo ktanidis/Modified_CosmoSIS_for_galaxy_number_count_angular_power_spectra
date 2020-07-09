@@ -7,7 +7,7 @@ The code is a fully-operational modified version of the publicly available packa
 
 # Installation
 
-This version of CosmoSIS, similarly to the original one, needs a 64-bit operating system. The modified code is tested only Ubuntu 14.04 and 18.04
+This version of CosmoSIS, similarly to the original one, needs a 64-bit operating system. The modified code is tested only on Ubuntu 14.04 and 18.04
 
 
 # Framework
@@ -35,3 +35,8 @@ the weak lensing magnification. We denote the linear galaxy bias with <img src="
 <img src="https://render.githubusercontent.com/render/math?math=\tilde N_A^i(\chi)=\displaystyle \int_\chi^\infty \chi^\prime\,\frac{\chi^\prime-\chi}{\chi^\prime}N_A^i(\chi^\prime)">
 
 # Code
+
+
+# Example
+
+# License
