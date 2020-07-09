@@ -4,6 +4,12 @@
 
 The code is a fully-operational modified version of the publicly available package code CosmoSIS ([Zunts et al. 2015](https://arxiv.org/pdf/1409.3409)). In this modular cosmological parameter estimation suite for galaxy number count Limber approximated angular power spectra, we allow for single and multiple tracers, including density fluctuations, redshift-space distortions, and weak lensing magnification.
 
+
+# Installation
+
+This version of CosmoSIS, similarly to the original one, needs a 64-bit operating system. The modified code is tested only Ubuntu 14.04 and 18.04
+
+
 # Framework
 
 The Limber approximated angular power spectrum for galaxy number counts has the following form:
@@ -27,3 +33,5 @@ the redshift-space distortions, and
 the weak lensing magnification. We denote the linear galaxy bias with <img src="https://render.githubusercontent.com/render/math?math=b(k_\ell,\chi)">; the growth factor with <img src="https://render.githubusercontent.com/render/math?math=D(k_\ell,\chi)"> ; the growth rate of matter perturbations with <img src="https://render.githubusercontent.com/render/math?math=f(k_\ell,\chi)">; and the source redshift distribution of the <img src="https://render.githubusercontent.com/render/math?math=A">-th galaxy population in the <img src="https://render.githubusercontent.com/render/math?math=i">-th redshift bin with <img src="https://render.githubusercontent.com/render/math?math=N^A_i">. Moreover, <img src="https://render.githubusercontent.com/render/math?math=\Omega_m, H_o"> is the total matter fraction in the Universe and the Hubble constant at present respectively, <img src="https://render.githubusercontent.com/render/math?math=c"> the speed of light, while <img src="https://render.githubusercontent.com/render/math?math=Q=5s/2"> is the so-called magnification bias, with <img src="https://render.githubusercontent.com/render/math?math=s"> the slope of the decadic logarithm of the comoving galaxy number density as a function of observed magnitude, taken at the magnitude cut of the survey, and we have defined
 
 <img src="https://render.githubusercontent.com/render/math?math=\tilde N_A^i(\chi)=\displaystyle \int_\chi^\infty \chi^\prime\,\frac{\chi^\prime-\chi}{\chi^\prime}N_A^i(\chi^\prime)">
+
+# Code
