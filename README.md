@@ -18,7 +18,7 @@ with <img src="https://render.githubusercontent.com/render/math?math=\chi"> the 
 
 the galaxy density fluctuations,
 
-<img src="https://render.githubusercontent.com/render/math?math= W_{g,RSD} ^{A,i}(k_\ell,\chi)=\frac{2\ell^2 %2B 2\ell-1}{(2\ell-1)(2\ell%2B 3)}\left[N_A^i(\chi)\right]">
+<img src="https://render.githubusercontent.com/render/math?math=W_{g,RSD} ^{A,i}(k_\ell,\chi)=\frac{2\ell^2 %2B 2\ell-1}{(2\ell-1)(2\ell%2B 3)}\left[N_A^i(\chi)\right]">
 
 the redshift-space distortions, and
 
