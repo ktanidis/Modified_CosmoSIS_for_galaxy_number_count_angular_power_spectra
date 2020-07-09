@@ -9,23 +9,23 @@ The code is a fully-operational modified version of the publicly available packa
 
 This version of CosmoSIS, similarly to the original one, needs a 64-bit operating system. The modified code is tested only on Ubuntu 16.04 and 18.04. In addition there are some package dependencies: 
 
-* <a href="https://www.python.org/downloads/release/python-2710/" target="_blank">**python2.7**</a> python2.7, or python3.6 or more recent version
+* <a href="https://www.python.org/downloads/release/python-2710/" target="_blank">**python2.7**</a>, or <a href="https://www.python.org/downloads/" target="_blank">**python3.6 or more recent version**</a>
 
-* reasonably recent versions of c/c%2B%2B/Fortran compilers (GCC 4.8 and above are fine, as are clang/clang%2B%2B)
+* reasonably recent versions of c/c++/Fortran compilers (GCC 4.8 and above are fine, as are clang/clang++B)
 
 * git
 
 as well as the libraries - gsl 1.16 or above - cfitsio 3.30 or above - fftw 3 - lapack. These are accessible with your package manager like apt and yaml
 
-To install python depedencies run: pip install -r config/requirements.txt
+To install python depedencies run: `pip install -r config/requirements.txt`
 
-and in case you encounter a permissions problem add: --user.
+and in case you encounter a permissions problem add: `--user`.
 
 If you wish to run in parallel than you need to install MPI. This is usually pre-installed on clusters and super-computers. Please be sure that you also have mpi4py installed with the same python and MPI:
 
-pip install --no-binary --no-wheel mpi4py
+`pip install --no-binary --no-wheel mpi4py`
 
-Note again that maybe you'll need to add: --user
+Note again that maybe you'll need to add: `--user`
 
 
 # Framework
