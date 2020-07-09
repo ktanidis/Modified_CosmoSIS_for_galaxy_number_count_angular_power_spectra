@@ -9,7 +9,7 @@ The code is a fully-operational modified version of the publicly available packa
 
 This version of CosmoSIS, similarly to the original one, needs a 64-bit operating system. The modified code is tested only on Ubuntu 16.04 and 18.04. In addition there are some package dependencies: 
 
-* python2.7, or python3.6 or more recent version
+* <a href="https://www.python.org/downloads/release/python-2710/" target="_blank">**python2.7**</a> python2.7, or python3.6 or more recent version
 
 * reasonably recent versions of c/c%2B%2B/Fortran compilers (GCC 4.8 and above are fine, as are clang/clang%2B%2B)
 
