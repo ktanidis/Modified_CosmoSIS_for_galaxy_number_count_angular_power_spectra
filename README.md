@@ -18,6 +18,9 @@ with <img src="https://render.githubusercontent.com/render/math?math=P_{\text{li
 
 the galaxy density fluctuations,
 
-<img src="https://render.githubusercontent.com/render/math?math=W_{g,RSD} ^{A,i}(k_\ell,\chi)=\frac{2\ell^2 %2B 2\ell-1}{(2\ell-1)(2\ell%2B 3)}\left[N_A^i(\chi)\right]\Big\{\left[fD\right](k_\ell,\chi)\Bigg\} 
+<img src="https://render.githubusercontent.com/render/math?math= W_{g,RSD} ^{A,i}(k_\ell,\chi)=\frac{2\ell^2 %2B 2\ell-1}{(2\ell-1)(2\ell%2B 3)}\left[N_A^i(\chi)\right]\Big\{\left[fD\right](k_\ell,\chi)\Bigg\} 
     -\frac{(\ell-1)\ell}{(2\ell-1)\sqrt{(2\ell-3)(2\ell%2B 1)}}\left[N_A^i (\chi)\right]\Bigg\{\left[ fD\right]\left(k_\ell,\frac{2\ell-3}{2\ell+1}\chi\right)\Bigg\}
     -\frac{(\ell%2B 1)(\ell%2B 2)}{(2\ell%2B 3)\sqrt{(2\ell%2B 1)(2\ell%2B 5)}}\left[N_A^i(\chi)\right] \Bigg\{\left[fD\right]\left(k_\ell,\frac{2\ell+5}{2\ell%2B 1}\chi\right)\Bigg\}">
+
+<img src="https://render.githubusercontent.com/render/math?math= W_{g,mag} ^{A,i}(k_\ell,\chi)=\frac{3\Omega_m\H_o ^2}{c^2}
+    \left{1+z(\chi)right}\chi\tilde{N_A^i(\chi)}\left{Q(\chi)-1\right}D(k_\ell,\chi)">
