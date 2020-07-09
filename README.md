@@ -11,7 +11,7 @@ This version of CosmoSIS, similarly to the original one, needs a 64-bit operatin
 
 * <a href="https://www.python.org/downloads/release/python-2710/" target="_blank">**python2.7**</a>, or <a href="https://www.python.org/downloads/" target="_blank">**python3.6 or more recent version**</a>
 
-* reasonably recent versions of c/c++/Fortran compilers (GCC 4.8 and above are fine, as are clang/clang++)
+* reasonably recent versions of C/C++/Fortran compilers (GCC 4.8 and above are fine, as are clang/clang++)
 
 * <a href="https://git-scm.com/downloads" target="_blank">**git**</a>
 
@@ -27,6 +27,22 @@ If you wish to run in parallel than you need to install MPI. This is usually pre
 
 Note again that maybe you'll need to add: `$ --user`
 
+After downloding then go to the main directory like this:
+
+`cd cosmosis
+
+ gedit setup-my-cosmosis`
+
+Configure the file `setup-my-cosmosis` by specifying the directories of the required dependencies. Then you should be able to run (inside the `cosmosis` directory):
+
+`source setup-my-cosmosis
+ make`
+
+should you get errors during this step, write us an issue by providing us the `setup-my-cosmosis` file along with the complete output of `make`.
+
+If you quit the terminal you should run again the step:
+
+`source setup-my-cosmosis`
 
 # Framework
 
