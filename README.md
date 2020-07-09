@@ -6,4 +6,7 @@ The code is a fully-operational modified version of the publicly available packa
 
 # Framework
 
+The Limber approximated angular power spectrum for galaxy number counts has the following form:
+
+<img src="https://render.githubusercontent.com/render/math?math=C^{Ai,Bj}_\ell=1">
 
