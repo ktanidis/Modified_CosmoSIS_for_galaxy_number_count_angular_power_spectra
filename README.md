@@ -29,15 +29,15 @@ Note again that maybe you'll need to add: `$ --user`
 
 After downloding the code, go to the main directory like this:
 
-`$ cd cosmosis`
-`$`
-`$ gedit setup-my-cosmosis`
+`$ cd cosmosis
+ $
+ $ gedit setup-my-cosmosis`
 
 Configure the file `setup-my-cosmosis` by specifying the directories of the required dependencies. Then you should be able to run (inside the `cosmosis` directory):
 
-`$source setup-my-cosmosis
+`$ source setup-my-cosmosis
  $
- $make`
+ $ make`
 
 should you get errors during this step, write us an issue by providing us the `setup-my-cosmosis` file along with the complete output of `make`.
 
