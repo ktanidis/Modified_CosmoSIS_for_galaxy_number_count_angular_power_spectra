@@ -7,7 +7,7 @@ The code is a fully-operational modified version of the publicly available packa
 
 # Installation
 
-This version of CosmoSIS, similarly to the original one, needs a 64-bit operating system. The modified code is tested only on Ubuntu 16.04 and 18.04. In principle, it can also work on Mac (If you wish to install on Mac, see <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/Mac%20Installs" target="_blank">**Install on Mac**</a>). After the successful installation on Mac the main directory should be replaced with this modified version. 
+This version of CosmoSIS, similarly to the original one, needs a 64-bit operating system. The modified code is tested on Ubuntu 16.04 and 18.04 but works on all Linux. It can also work on Mac (If you wish to install on Mac, see <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/Mac%20Installs" target="_blank">**Install on Mac**</a>). After the successful installation on Mac the main directory should be replaced with this modified version. 
 
 CosmosSIS needs some package dependencies: 
 
