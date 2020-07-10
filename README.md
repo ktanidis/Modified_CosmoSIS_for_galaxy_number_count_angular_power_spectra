@@ -27,7 +27,7 @@ $ pip install -r config/requirements.txt
 
 and in case you encounter a permissions problem add: `$ --user`.
 
-If you wish to run in parallel than you need to install MPI. This is usually pre-installed on clusters and super-computers. Please be sure that you also have mpi4py installed with the same python and MPI:
+If you wish to run in parallel then you need to install MPI. This is usually pre-installed on clusters and super-computers. Please be sure that you also have mpi4py installed with the same python and MPI:
 
 ```shell
 $ pip install --no-binary --no-wheel mpi4py
