@@ -108,7 +108,7 @@ Finally, we modified the Gaussian likelihood module `cosmosis/cosmosis-standard-
 
 # Example
 
-Run the following example `ini` file with : `cosmosis examples/my_example/LRGnELG.ini`. This example provides the mock data (data vector and covariance matrix) of multi-tracer galaxy number count angular spectra between the Luminus Red Galaxy and the Emission Line Galaxy samples of the Dark Energy Spectroscopic Instrument ([Aghamousa et al. 2016](https://arxiv.org/pdf/1611.00036) given a fiducial cosmological model.
+Run the following example `ini` file with : `cosmosis examples/my_example/LRGnELG.ini`. This example provides the mock data (data vector and covariance matrix) of multi-tracer galaxy number count angular spectra between the Luminus Red Galaxy and the Emission Line Galaxy samples of the Dark Energy Spectroscopic Instrument ([Aghamousa et al. 2016](https://arxiv.org/pdf/1611.00036)) given a fiducial cosmological model.
 
 
 ```ini
@@ -243,7 +243,7 @@ RSD=1
 MAG=1
 
 ```
-In order to consider or not the density fluctuations, the redshift-space distortions and weak lensing magnification contributions specify the value 1 or 0 respectively for the parameters `DEN, RSD` and `MAG` as seen in the above `values.ini` file. Should you have any inqueries regarding the rest of the CosmoSIS modules and the input cosmological parameters visit <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/Home">**CosmoSIS_Wiki**</a>.
+In order to consider or not the density fluctuations, the redshift-space distortions and weak lensing magnification contributions specify the value 1 or 0 respectively for the parameters `DEN, RSD` and `MAG` as seen in the above `values.ini` file. Should you have any inqueries regarding the rest of the CosmoSIS modules and the input cosmological parameters, visit <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/Home">**CosmoSIS_Wiki**</a>.
 
 
 # License
