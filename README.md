@@ -7,7 +7,7 @@ The code is a fully-operational modified version of the publicly available packa
 
 # Installation
 
-This version of CosmoSIS, similarly to the original one, needs a 64-bit operating system. The modified code is tested only on Ubuntu 16.04 and 18.04. In principle, it can work also on Mac (see <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/Mac%20Installs" target="_blank">**Install on Mac**</a>). After the successful installation the source code should be replaced with this modified version. In addition there are some package dependencies: 
+This version of CosmoSIS, similarly to the original one, needs a 64-bit operating system. The modified code is tested only on Ubuntu 16.04 and 18.04. In principle, it can also work on Mac (see <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/Mac%20Installs" target="_blank">**Install on Mac**</a>). After the successful installation on Mac the source code should be replaced with this modified version. In addition there are some package dependencies: 
 
 * <a href="https://www.python.org/downloads/release/python-2710/" target="_blank">**python2.7**</a>, or <a href="https://www.python.org/downloads/" target="_blank">**python3.6 or more recent version**</a>
 
