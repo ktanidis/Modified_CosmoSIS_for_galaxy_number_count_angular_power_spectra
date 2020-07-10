@@ -85,13 +85,22 @@ the weak lensing magnification. We denote the linear galaxy bias with <img src="
 
 # Code
 
-To account for single or multi tracer analysis, we use the module `cosmosis/cosmosis-standard-library/number_density/load_nz/` (see <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/default_modules/load_nz_1">**load_nz**</a>). This modules reads from a txt file the <img src="https://render.githubusercontent.com/render/math?math=N_A^i(z)"> distributions for the <img src="https://render.githubusercontent.com/render/math?math=i">th bin of the tracer with the format: 1 st column redshift, and the rest the <img src="https://render.githubusercontent.com/render/math?math=N_A^i(z)"> bins. For example for two tracers each having 2 bins the columns read : z, tracerA:bin1,tracerA:bin2,tracerB:bin1,tracerB:bin2
+To account for single or multi tracer analysis, we use the module `cosmosis/cosmosis-standard-library/number_density/load_nz/` (see <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/default_modules/load_nz_1">**load_nz**</a>). This modules reads from a txt file the <img src="https://render.githubusercontent.com/render/math?math=N_A^i(z)"> distributions for the <img src="https://render.githubusercontent.com/render/math?math=i">th bin of the tracer with the format: 1 st column redshift, and the rest the <img src="https://render.githubusercontent.com/render/math?math=N_A^i(z)"> bins. For example for two tracers each having 2 bins in the redshift range <img src="https://render.githubusercontent.com/render/math?math=z"> the columns read : z, tracerA:bin1,tracerA:bin2,tracerB:bin1,tracerB:bin2
 
-The modified part of the code is the module under the directory: `cosmosis/cosmosis-standard-library/structure/projection/src/`, and more specifically:
+The modified part of the code is the module under the directory: `cosmosis/cosmosis-standard-library/structure/projection/src/` (for original CosmoSIS version see <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/default_modules/project_2d_1.0">**project_2d**</a>), and more specifically:
 
-* `utils.c`: Calculates the functions <img src="https://render.githubusercontent.com/render/math?math=D(k_\ell,\chi)">, <img src="https://render.githubusercontent.com/render/math?math=f(k_\ell,\chi)">, <img src="https://render.githubusercontent.com/render/math?math=b(k_\ell,\chi)"> (based on cosmology with massive neutrinos)
+* `utils.c`: Calculates the functions <img src="https://render.githubusercontent.com/render/math?math=P_\text{lin}(k_\ell)">, <img src="https://render.githubusercontent.com/render/math?math=D(k_\ell,\chi)">, <img src="https://render.githubusercontent.com/render/math?math=f(k_\ell,\chi)">, <img src="https://render.githubusercontent.com/render/math?math=b(k_\ell,\chi)"> (based on cosmology with massive neutrinos)
 
-* `kernel.c`: Calculates the <img src="https://render.githubusercontent.com/render/math?math=N_A ^i">
+* `kernel.c`: Specifies the considered galaxy number count contributions under the names `DEN` for the galaxy density field, `RSD` for redshift-space distortions and `MAG` for the weak lensing magnification. It also calculates the corresponding normalized <img src="https://render.githubusercontent.com/render/math?math=N_A ^i"> and some prefacors (in the case of weak lensing magnification)
+
+* `limber.c`: Calculates the <img src="https://render.githubusercontent.com/render/math?math=C_{\ell\gg 1} ^g ({z_i ^A,z_j ^B})"> assuming <img src="https://render.githubusercontent.com/render/math?math=W_{g} ^{A,i}(k_\ell,\chi)=W_{g,den} ^{A,i}(k_\ell,\chi)%2BW_{g,RSD} ^{A,i}(k_\ell,\chi)%2B W_{g,mag} ^{A,i}(k_\ell,\chi)">.
+
+In addition to these, the Python interface of the code is modified as well (the directory `cosmosis/cosmosis-standard-library/structure/projection/`).
+
+* `limber.py`: load the source code functions
+
+* `project_2d.py`: provide three kernels for the output with the names `W_source,F_source` and `M_source` accounting for `DEN,RSD` and `MAG`
+
 
 # Example
 
