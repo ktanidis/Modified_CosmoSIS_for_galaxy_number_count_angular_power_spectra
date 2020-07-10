@@ -101,11 +101,84 @@ In addition to these, the Python interface of the code is modified as well (the 
 
 * `project_2d.py`: provides the output <img src="https://render.githubusercontent.com/render/math?math=C_{\ell\gg 1} ^g ({z_i ^A,z_j ^B})">. Three kernels are used with the names `W_source, F_source` and `M_source` accounting for `DEN, RSD` and `MAG`
 
-NOTE: The current modified CosmoSIS version is valid for galaxy clustering ONLY under the entry `galcl-gals=source-source-source`. DO NOT attepmt to ask output for the section names like CMB_kappa, Shear or Intristic alighments (for these see again the original module <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/default_modules/project_2d_1.0">**project_2d**</a>).
+NOTE: The current modified CosmoSIS version is valid for galaxy clustering ONLY under the entry `galcl-gals=source-source-source` (see Example). DO NOT attepmt to ask output for the section names like CMB_kappa, Shear or Intristic alighments (for these see again the original module <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/default_modules/project_2d_1.0">**project_2d**</a>).
 
-Finally we modify the Gaussian likelihood module `cosmosis/cosmosis-standard-library/likelihood/2pt/` to account for the output name `galcl`
+Finally, we modified the Gaussian likelihood module `cosmosis/cosmosis-standard-library/likelihood/2pt/` to account for the output name `galcl`
 
 
 # Example
+
+Run the following example `ini` file with : `cosmosis examples/my_example/LRGnELG.ini`
+
+
+```ini
+[runtime]
+sampler = test
+
+[test]
+save_dir=examples/my_example/output
+fatal_errors=T
+
+[pipeline]
+modules = consistency camb sigma8_rescale load_nz galcl_galcl save_simulation
+values = examples/my_example/values.ini
+likelihoods =
+extra_output = 
+quiet=T
+timing=F
+debug=F
+
+[consistency]
+file = cosmosis-standard-library/utility/consistency/consistency_interface.py
+
+[camb]
+file = cosmosis-standard-library/boltzmann/camb/camb.so
+mode=all
+lmax=2500
+feedback=0
+zmax=1.75
+nz=176
+
+[sigma8_rescale]
+file = cosmosis-standard-library/utility/sample_sigma8/sigma8_rescale.py
+
+[load_nz]
+file = cosmosis-standard-library/number_density/load_nz/load_nz.py
+filepath = cosmosis-standard-library/LRGandELG.txt
+output_section=nz_source
+
+[galcl_galcl]
+file = cosmosis-standard-library/structure/projection/project_2d.py
+ell_min = 2.0
+ell_max = 1000.0
+n_ell = 20
+;this is to incorporate density-RSD-magnification for the bins auto and cross-correlations
+galcl-galcl = source-source-source
+verbose = T
+
+[save_simulation]
+file = cosmosis-standard-library/likelihood/2pt/save_2pt.py
+galcl_nz_name = source
+position_nz_name = source
+filename = examples/my_example/LRGnELG.fits
+;clobber = T
+overwrite = T
+make_covariance = T
+gaussian_covariance = T
+;These values define the survey and the observations being made
+;First, some details of the survey itself:
+survey_area = 14000.0
+number_density_galcl_bin = 0.0288 0.0307 0.0134 0.0022 0.00026243 0.0268 0.0782 0.0725 0.0537 0.1077
+number_density_lss_bin = 0.0288 0.0307 0.0134 0.0022 0.00026243 0.0268 0.0782 0.0725 0.0537 0.1077
+;we do not care about sigma_e for galaxy clustering
+sigma_e_bin = 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1
+;Then the observations we will generate:
+ell_min = 2.0
+ell_max = 1000.0
+n_ell = 20
+
+data_sets=galcl_cl
+
+```
 
 # License
