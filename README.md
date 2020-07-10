@@ -17,7 +17,7 @@ CosmosSIS needs some package dependencies:
 
 * <a href="https://git-scm.com/downloads" target="_blank">**git**</a>
 
-as well as the libraries - <a href="http://mirror.kumi.systems/gnu/gsl/" target="_blank">**gsl 1.16**</a> or above - <a href="https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html" target="_blank">**cfitsio 3.30**</a> or above - <a href="http://www.fftw.org/download.html" target="_blank">**fftw 3**</a> - <a href="http://www.netlib.org/lapack/#_lapack_version_3_5_0" target="_blank">**lapack**</a>. These are accessible with your package manager using apt or yaml
+as well as the libraries - <a href="http://mirror.kumi.systems/gnu/gsl/" target="_blank">**gsl 1.16**</a> or above - <a href="https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html" target="_blank">**cfitsio 3.30**</a> or above - <a href="http://www.fftw.org/download.html" target="_blank">**fftw 3**</a> - <a href="http://www.netlib.org/lapack/#_lapack_version_3_5_0" target="_blank">**lapack**</a>. These are accessible with your package manager using apt or yam
 
 To install python depedencies run: 
 
