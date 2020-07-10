@@ -85,6 +85,13 @@ the weak lensing magnification. We denote the linear galaxy bias with <img src="
 
 # Code
 
+To account for single or multi tracer analysis, we use the module `cosmosis/cosmosis-standard-library/number_density/load_nz/` (see <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/default_modules/load_nz_1">**load_nz**</a>). This modules reads from a txt file the <img src="https://render.githubusercontent.com/render/math?math=N_A^i(z)"> distributions for the <img src="https://render.githubusercontent.com/render/math?math=i">th bin of the tracer with the format: 1 st column redshift, and the rest the <img src="https://render.githubusercontent.com/render/math?math=N_A^i(z)"> bins. For example for two tracers each having 2 bins the columns read : z, tracerA:bin1,tracerA:bin2,tracerB:bin1,tracerB:bin2
+
+The modified part of the code is the module under the directory: `cosmosis/cosmosis-standard-library/structure/projection/src/`, and more specifically:
+
+* `utils.c`: Calculates the functions <img src="https://render.githubusercontent.com/render/math?math=D(k_\ell,\chi)">, <img src="https://render.githubusercontent.com/render/math?math=f(k_\ell,\chi)">, <img src="https://render.githubusercontent.com/render/math?math=b(k_\ell,\chi)"> (based on cosmology with massive neutrinos)
+
+* `kernel.c`: Calculates the <img src="https://render.githubusercontent.com/render/math?math=N_A ^i">
 
 # Example
 
