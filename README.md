@@ -7,7 +7,7 @@ The code is a fully-operational modified version of the publicly available packa
 
 # Installation
 
-This version of CosmoSIS, similarly to the original one, needs a 64-bit operating system. The modified code is tested only on Ubuntu 16.04 and 18.04. In principle, it can also work on Mac (If you wish to install on Mac, see <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/Mac%20Installs" target="_blank">**Install on Mac**</a>). After the successful installation on Mac the source code should be replaced with this modified version. 
+This version of CosmoSIS, similarly to the original one, needs a 64-bit operating system. The modified code is tested only on Ubuntu 16.04 and 18.04. In principle, it can also work on Mac (If you wish to install on Mac, see <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/Mac%20Installs" target="_blank">**Install on Mac**</a>). After the successful installation on Mac the main directory should be replaced with this modified version. 
 
 CosmosSIS needs some package dependencies: 
 
@@ -97,9 +97,13 @@ The modified part of the code is the module under the directory: `cosmosis/cosmo
 
 In addition to these, the Python interface of the code is modified as well (the directory `cosmosis/cosmosis-standard-library/structure/projection/`).
 
-* `limber.py`: load the source code functions
+* `limber.py`: loads the source code functions
 
-* `project_2d.py`: provide three kernels for the output with the names `W_source,F_source` and `M_source` accounting for `DEN,RSD` and `MAG`
+* `project_2d.py`: provides three kernels for the output with the names `W_source, F_source` and `M_source` accounting for `DEN,RSD` and `MAG`
+
+NOTE:
+
+Finally we modify the Gaussian likelihood module `cosmosis/cosmosis-standard-library/likelihood/2pt/` to account for the output name `galcl`
 
 
 # Example
