@@ -35,7 +35,7 @@ $ pip install --no-binary --no-wheel mpi4py
 
 Note again that maybe you'll need to add: `$ --user`
 
-After downloding the code, go to the main directory like this (optinal: you can rename the main directory to 'cosmosis' or whatever name you like):
+After downloding the code, go to the main directory like this (optional: you can rename the main directory to 'cosmosis' or whatever name you like):
 
 ```shell
 $ cd cosmosis
