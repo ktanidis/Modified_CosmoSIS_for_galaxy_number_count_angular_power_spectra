@@ -59,6 +59,8 @@ $ source setup-my-cosmosis
 
 Check that the installation is successful by running <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/demos/Demo1" target="_blank">**demo1**</a> 
 
+NOTE: In case you encounter a permission denial in a specific directory when you run CosmoSIS, try `$ chmod +x /directory`.
+
 # Framework
 
 The Limber approximated angular power spectrum for galaxy number counts has the following form:
