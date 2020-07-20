@@ -11,13 +11,13 @@ This version of CosmoSIS, similarly to the original one, needs a 64-bit operatin
 
 CosmosSIS needs some package dependencies: 
 
-* <a href="https://www.python.org/downloads/release/python-2710/" target="_blank">**python2.7**</a>, or <a href="https://www.python.org/downloads/" target="_blank">**python3.6 or more recent version**</a>
+* <a href="https://www.python.org/downloads/release/python-2710/" target="_blank">**python2.7**</a>, or <a href="https://www.python.org/downloads/" target="_blank">**python3.6 or a more recent version**</a>
 
 * reasonably recent versions of C/C++/Fortran compilers (GCC 4.8 and above are fine, as are clang/clang++)
 
 * <a href="https://git-scm.com/downloads" target="_blank">**git**</a>
 
-as well as the libraries - <a href="http://mirror.kumi.systems/gnu/gsl/" target="_blank">**gsl 1.16**</a> or above - <a href="https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html" target="_blank">**cfitsio 3.30**</a> or above - <a href="http://www.fftw.org/download.html" target="_blank">**fftw 3**</a> - <a href="http://www.netlib.org/lapack/#_lapack_version_3_5_0" target="_blank">**lapack**</a>. These are accessible with your package manager using apt or yam
+as well as the libraries - <a href="http://mirror.kumi.systems/gnu/gsl/" target="_blank">**gsl 1.16**</a> or above - <a href="https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html" target="_blank">**cfitsio 3.30**</a> or above - <a href="http://www.fftw.org/download.html" target="_blank">**fftw 3**</a> and - <a href="http://www.netlib.org/lapack/#_lapack_version_3_5_0" target="_blank">**lapack**</a>. These are accessible with your package manager using apt or yam
 
 To install python depedencies run: 
 
