@@ -103,7 +103,7 @@ In addition to these, the Python interface of the code is modified as well (the 
 
 * `project_2d.py`: provides the output <img src="https://render.githubusercontent.com/render/math?math=C_{\ell\gg 1} ^g ({z_i ^A,z_j ^B})">. Three kernels are used with the names `W_source, F_source` and `M_source` accounting for `DEN, RSD` and `MAG`
 
-NOTE: The current modified CosmoSIS version is valid for galaxy clustering ONLY under the entry `galcl-galcl=source-source-source` (see the Example below). DO NOT attempt to ask output for the section names like CMB_kappa, Shear or Intristic alighments, etc.. (for these see again the original module <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/default_modules/project_2d_1.0">**project_2d**</a>).
+NOTE: The current modified CosmoSIS version is valid for galaxy clustering ONLY under the entry `galcl-galcl=source-source-source` (see the Example below). DO NOT attempt to ask output for the section names like CMB_kappa, Shear or Intrinsic alignments, etc.. (for these see again the original module <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/default_modules/project_2d_1.0">**project_2d**</a>).
 
 Finally, we modified the Gaussian likelihood module `cosmosis/cosmosis-standard-library/likelihood/2pt/` to account for the output name `galcl`
 
