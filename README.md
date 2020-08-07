@@ -75,7 +75,7 @@ with <img src="https://render.githubusercontent.com/render/math?math=\chi"> the 
 
 the galaxy density fluctuations,
 
-<img src="https://render.githubusercontent.com/render/math?math=W_{g,RSD} ^{A,i}(k_\ell,\chi)=\frac{2\ell^2 %2B 2\ell-1}{(2\ell-1)(2\ell%2B 3)}N_A^i(\chi)[fD\right](k_\ell,\chi)-\frac{(\ell-1)\ell}{(2\ell-1)\sqrt{(2\ell-3)(2\ell %2B 1)}}N_A^i (\frac{2\ell-3}{2\ell %2B 1}\chi)\left[fD \right]\left(k_\ell,\frac{2\ell-3}{2\ell %2B 1}\chi \right)-\frac{(\ell %2B 1)(\ell %2B 2)}{(2\ell %2B 3)\sqrt{(2\ell %2B 1)(2\ell %2B 5)}}N_A^i (\frac{2\ell %2B 5}{2\ell %2B 1}\chi)\left[fD\right]\left( k_\ell,\frac{2\ell %2B 5}{2\ell %2B 1}\chi \right)">
+<img src="https://render.githubusercontent.com/render/math?math=W_{g,RSD} ^{A,i}(k_\ell,\chi)=\frac{2\ell^2 %2B 2\ell-1}{(2\ell-1)(2\ell%2B 3)}N_A^i(\chi)[fD\right](k_\ell,\chi)-\frac{(\ell-1)\ell}{(2\ell-1)\sqrt{(2\ell-3)(2\ell %2B 1)}}N_A^i \left(\frac{2\ell-3}{2\ell %2B 1}\chi\right)\left[fD \right]\left(k_\ell,\frac{2\ell-3}{2\ell %2B 1}\chi\right)-\frac{(\ell %2B 1)(\ell %2B 2)}{(2\ell %2B 3)\sqrt{(2\ell %2B 1)(2\ell %2B 5)}}N_A^i \left(\frac{2\ell %2B 5}{2\ell %2B 1}\chi \right)\left[fD \right]\left(k_\ell,\frac{2\ell %2B 5}{2\ell %2B 1}\chi\right)">
 
 the redshift-space distortions, and
 
