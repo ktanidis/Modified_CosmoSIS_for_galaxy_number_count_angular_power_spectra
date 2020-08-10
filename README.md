@@ -75,7 +75,7 @@ with <img src="https://render.githubusercontent.com/render/math?math=\chi"> the 
 
 the galaxy density fluctuations,
 
-<img src="https://render.githubusercontent.com/render/math?math=W_{g,RSD} ^{A,i}(k_\ell,\chi)=\frac{2\ell^2 %2B 2\ell-1}{(2\ell-1)(2\ell%2B 3)}N_A^i(\chi)[fD\right](k_\ell,\chi)-\frac{(\ell-1)\ell}{(2\ell-1)\sqrt{(2\ell-3)(2\ell %2B 1)}}N_A^i\left(\frac{2\ell-3}{2\ell %2B 1}\chi\right)\left[fD\right]\left(k_\ell,\frac{2\ell-3}{2\ell %2B 1}\chi\right)-\frac{(\ell %2B 1)(\ell %2B 2)}{(2\ell %2B 3)\sqrt{(2\ell %2B 1)(2\ell %2B 5)}}N_A^i\left(\frac{2\ell %2B 5}{2\ell %2B 1}\chi\right)\left[fD \right]\left(k_\ell,\frac{2\ell %2B 5}{2\ell %2B 1}\chi\right)">
+<img src="https://render.githubusercontent.com/render/math?math=W_{g,RSD} ^{A,i}(k_\ell,\chi)=">
 
 the redshift-space distortions, and
 
@@ -84,6 +84,8 @@ the redshift-space distortions, and
 the weak lensing magnification. We denote the linear galaxy bias with <img src="https://render.githubusercontent.com/render/math?math=b(k_\ell,\chi)">; the growth factor with <img src="https://render.githubusercontent.com/render/math?math=D(k_\ell,\chi)"> ; the growth rate of matter perturbations with <img src="https://render.githubusercontent.com/render/math?math=f(k_\ell,\chi)">; and the source redshift distribution of the <img src="https://render.githubusercontent.com/render/math?math=A">-th galaxy population in the <img src="https://render.githubusercontent.com/render/math?math=i">-th redshift bin with <img src="https://render.githubusercontent.com/render/math?math=N_A^i">. Moreover, <img src="https://render.githubusercontent.com/render/math?math=\Omega_m, H_o"> is the total matter fraction in the Universe and the Hubble constant at present respectively, <img src="https://render.githubusercontent.com/render/math?math=c"> the speed of light, while <img src="https://render.githubusercontent.com/render/math?math=Q=5s/2"> is the so-called magnification bias, with <img src="https://render.githubusercontent.com/render/math?math=s"> the slope of the decadic logarithm of the comoving galaxy number density as a function of observed magnitude, taken at the magnitude cut of the survey, and we have defined
 
 <img src="https://render.githubusercontent.com/render/math?math=\tilde N_A^i(\chi)=\displaystyle \int_\chi^\infty \chi^\prime\,\frac{\chi^\prime-\chi}{\chi^\prime}N_A^i(\chi^\prime)">
+
+which is called lensing efficiency.
 
 # Code
 
