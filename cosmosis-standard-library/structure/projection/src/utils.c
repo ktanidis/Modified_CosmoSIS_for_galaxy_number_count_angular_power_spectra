@@ -440,7 +440,7 @@ load_interpolator_chi_function4(c_datablock * block, gsl_spline * chi_of_z_splin
 	//	kfs[0][i] = 0.82 * sqrt(1.0 - Om + Om * (1.0 + z[i]) * (1.0 + z[i]) * (1.0 + z[i]))/((1.0 + z[i]) * (1.0 + z[i])) * mv;
 	//}  
         double knr;
-        knr = 0.018 * sqrt(Om) * mv;      
+        knr = 0.018 * sqrt(Om) * sqrt(mv);      
 
         double constant=1.0;
 	//this is to take b(k,z)
