@@ -255,4 +255,4 @@ In order to consider or not the density fluctuations, the redshift-space distort
 
 The code is an available open source and you are welcome to reuse it under the terms of our <a href="https://github.com/ktanidis/Modified_CosmoSIS_for_galaxy_number_count_angular_power_spectra/blob/master/LICENSE">**LICENSE**</a> (<a href="https://opensource.org/licenses/BSD-2-Clause">**BSD-2-Clause**</a>)
 
-Note that some modules of this code like `CAMB`, `CLASS`, `emcee`, `multinest`, etc.. have their own separate licenses that should be taken into account if used. These can be found in the <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/Home">**CosmoSIS_Wiki**</a>.
+Note that some sub-components of this code like `CAMB`, `CLASS`, `emcee`, `multinest`, etc.. have their own separate licenses that should be taken into account if used. These can be found in the <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/Home">**CosmoSIS_Wiki**</a>.
