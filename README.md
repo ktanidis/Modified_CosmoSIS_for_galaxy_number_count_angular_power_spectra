@@ -93,7 +93,7 @@ To account for single or multi-tracer analysis, we use the module `cosmosis/cosm
 
 The modified part of the code is the module under the directory: `cosmosis/cosmosis-standard-library/structure/projection/src/` (for the original CosmoSIS module version see <a href="https://bitbucket.org/joezuntz/cosmosis/wiki/default_modules/project_2d_1.0">**project_2d**</a>), and more specifically:
 
-* `utils.c`: Loads the function <img src="https://render.githubusercontent.com/render/math?math=P_\text{lin}(k_\ell)">, and calculates <img src="https://render.githubusercontent.com/render/math?math=D(k_\ell,\chi)">, <img src="https://render.githubusercontent.com/render/math?math=f(k_\ell,\chi)">, <img src="https://render.githubusercontent.com/render/math?math=b(k_\ell,\chi)"> (based on eq 5.6 [Castorina et al. 2014](https://arxiv.org/pdf/1311.1212))
+* `utils.c`: Loads the function <img src="https://render.githubusercontent.com/render/math?math=P_\text{lin}(k_\ell)">, and calculates <img src="https://render.githubusercontent.com/render/math?math=D(k_\ell,\chi)">, <img src="https://render.githubusercontent.com/render/math?math=f(k_\ell,\chi)">, <img src="https://render.githubusercontent.com/render/math?math=b(k_\ell,\chi)"> (based on eq.5.6 of [Castorina et al. 2014](https://arxiv.org/pdf/1311.1212))
 
 * `kernel.c`: Specifies the considered galaxy number count contributions under the names `DEN` for the galaxy density field, `RSD` for redshift-space distortions and `MAG` for the weak lensing magnification. It also calculates the corresponding normalized <img src="https://render.githubusercontent.com/render/math?math=N_A ^i"> and some prefacors (in the case of weak lensing magnification)
 
