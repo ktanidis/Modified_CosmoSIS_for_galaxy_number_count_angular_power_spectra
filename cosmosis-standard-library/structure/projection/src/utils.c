@@ -137,19 +137,19 @@ load_interpolator(c_datablock * block,
 Interpolator2D * 
 load_interpolator_chi_function2(c_datablock * block, gsl_spline * chi_of_z_spline,  gsl_spline * z_of_chi_spline,
 	const char * section,
-	const char * k_name, const char * z_name, const char * T_name,
+	const char * k_name, const char * z_name, const char * P_name,
 	interp2d_modifier_function function, void * args
 	)
 {
 	int nk, nz, nT;
 	double *k=NULL, *z=NULL;
-	double **T=NULL;
+	double **P=NULL;
 	int status = 0;
 
 	status = c_datablock_get_double_grid(block, section, 
 		k_name, &nk, &k, 
 		z_name, &nz, &z, 
-		T_name, &T);
+		P_name, &P);
 
 	double a[nk][nz],*pp[nk],**dTdz=NULL;
         for(int j=0;j<nk;j++){
@@ -161,6 +161,11 @@ load_interpolator_chi_function2(c_datablock * block, gsl_spline * chi_of_z_splin
 	ppp[j]=&b[j][0];}//for f(k,z)
 	f=ppp;
 
+	double c[nk][nz],*pppp[nk],**T=NULL;
+        for(int j=0;j<nk;j++){
+	pppp[j]=&c[j][0];}//for the T(k,z)
+	T=pppp;
+
 
 	if (status){
 		fprintf(stderr, "Could not load interpolator for T(k).  Error %d\n",status);
@@ -169,9 +174,18 @@ load_interpolator_chi_function2(c_datablock * block, gsl_spline * chi_of_z_splin
 
 	for (int j=0; j<nk; j++){
 		for (int i=0; i<nz; i++){
-			T[j][i] = function(k[j], z[i], T[j][i], args);
+			P[j][i] = function(k[j], z[i], P[j][i], args);
 		}
 	}
+
+	//this is to take T(k,z)
+	for (int j=0; j<nk; j++){
+		for (int i=0; i<nz; i++){
+			T[j][i] = sqrt(P[j][i]/P[j][0]);
+		}
+	}
+
+
 
         //derivative dT/dz
 
@@ -230,21 +244,21 @@ load_interpolator_chi_function2(c_datablock * block, gsl_spline * chi_of_z_splin
 Interpolator2D * 
 load_interpolator_chi2(c_datablock * block, gsl_spline * chi_of_z_spline, gsl_spline * z_of_chi_spline,
 	const char * section,
-	const char * k_name, const char * z_name, const char * T_name)
+	const char * k_name, const char * z_name, const char * P_name)
 {
 
-	return load_interpolator_chi_function2(block, chi_of_z_spline, z_of_chi_spline, section, k_name, z_name, T_name, identity_function, NULL);
+	return load_interpolator_chi_function2(block, chi_of_z_spline, z_of_chi_spline, section, k_name, z_name, P_name, identity_function, NULL);
 }
 
 
 Interpolator2D * 
 load_interpolator_function2(c_datablock * block, 
 	const char * section,
-	const char * k_name, const char * z_name, const char * T_name,
+	const char * k_name, const char * z_name, const char * P_name,
 	interp2d_modifier_function function, void * args
 	)
 {
-	return load_interpolator_chi_function2(block, NULL, NULL, section, k_name, z_name, T_name, function, args);
+	return load_interpolator_chi_function2(block, NULL, NULL, section, k_name, z_name, P_name, function, args);
 
 }
 
@@ -252,9 +266,9 @@ load_interpolator_function2(c_datablock * block,
 Interpolator2D * 
 load_interpolator2(c_datablock * block, 
 	const char * section,
-	const char * k_name, const char * z_name, const char * T_name)
+	const char * k_name, const char * z_name, const char * P_name)
 {
-	return load_interpolator_chi_function2(block, NULL, NULL, section, k_name, z_name, T_name, identity_function, NULL);
+	return load_interpolator_chi_function2(block, NULL, NULL, section, k_name, z_name, P_name, identity_function, NULL);
 }
 
 // to here---------------------------------------
