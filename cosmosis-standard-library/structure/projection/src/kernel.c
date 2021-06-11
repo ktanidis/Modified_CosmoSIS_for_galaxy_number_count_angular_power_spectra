@@ -1327,7 +1327,7 @@ int execute(c_datablock * block, void * config_in)
 
 
 	Interpolator2D * fK = load_interpolator_chi2(
-		block, chi_of_z_spline, z_of_chi_spline, linear_cdm_transfer, "k_h", "z", "delta_cdm");
+		block, chi_of_z_spline, z_of_chi_spline, MATTER_POWER_LIN_SECTION, "k_h", "z", "P_k");
 
 
 	Interpolator2D * DK = load_interpolator_chi3(
