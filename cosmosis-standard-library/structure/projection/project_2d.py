@@ -139,7 +139,7 @@ class Spectrum(object):
         #Get the required kernels and the scale dep. quantities
 
         P = self.source.power[self.power_3d]
-        fk = self.source.powerfk["linear_cdm_transfer"]
+        fk = self.source.powerfk["matter_power_lin"]
         Dk = self.source.powerDk["matter_power_lin"]
         Bk = self.source.powerBk["matter_power_lin"]
 
@@ -600,8 +600,8 @@ class SpectrumCalculator(object):
 
 
     def load_fk(self, block):
-	self.powerfk["linear_cdm_transfer"] = limber.load_power_chi2(
-        block, self.chi_of_z, self.z_of_chi, names.linear_cdm_transfer, "k_h", "z", "delta_cdm")
+	self.powerfk["matter_power_lin"] = limber.load_power_chi2(
+        block, self.chi_of_z, self.z_of_chi, names.matter_power_lin, "k_h", "z", "p_k")
 
     def load_Dk(self, block): 
 	self.powerDk["matter_power_lin"] = limber.load_power_chi3(
